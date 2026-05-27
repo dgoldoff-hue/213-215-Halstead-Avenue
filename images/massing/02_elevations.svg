@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid meet" font-family="Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <pattern id="brick" patternUnits="userSpaceOnUse" width="20" height="10">
+      <rect width="20" height="10" fill="#A8693B"/>
+      <line x1="0" y1="5" x2="20" y2="5" stroke="#7A4D2A" stroke-width="0.5"/>
+      <line x1="10" y1="0" x2="10" y2="5" stroke="#7A4D2A" stroke-width="0.5"/>
+      <line x1="0" y1="5" x2="0" y2="10" stroke="#7A4D2A" stroke-width="0.5"/>
+      <line x1="20" y1="5" x2="20" y2="10" stroke="#7A4D2A" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="glass" patternUnits="userSpaceOnUse" width="12" height="12">
+      <rect width="12" height="12" fill="#B8D4E8" opacity="0.6"/>
+      <line x1="0" y1="6" x2="12" y2="6" stroke="#7BA8C8" stroke-width="0.5"/>
+      <line x1="6" y1="0" x2="6" y2="12" stroke="#7BA8C8" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="existing" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#BFA133" stroke-width="0.8" opacity="0.5"/>
+    </pattern>
+  </defs>
+  
+  <text x="600" y="35" text-anchor="middle" font-size="22" font-weight="700" fill="#0A0A0A">PROPOSED MASSING — ELEVATIONS (3 STORY OFFICE MIXED-USE)</text>
+  <text x="600" y="58" text-anchor="middle" font-size="12" fill="#6B5F4F">Conceptual schematics — As-of-right under C-2 Central Commercial zoning. Subject to entitlement approvals.  Scale 1" = 5'</text>
+  
+  <!-- ============ FRONT ELEVATION ============ -->
+  <g transform="translate(80,100)">
+    <text x="125" y="0" text-anchor="middle" font-size="15" font-weight="700" fill="#0A0A0A">FRONT ELEVATION</text>
+    <text x="125" y="18" text-anchor="middle" font-size="10" fill="#6B5F4F">Halstead Avenue View — 25' wide</text>
+    
+    <!-- Ground line -->
+    <line x1="-10" y1="500" x2="260" y2="500" stroke="#0A0A0A" stroke-width="2"/>
+    <line x1="-10" y1="503" x2="260" y2="503" stroke="#0A0A0A" stroke-width="1"/>
+    
+    <!-- 3rd floor -->
+    <rect x="0" y="180" width="250" height="110" fill="url(#brick)" stroke="#0A0A0A" stroke-width="1.5"/>
+    <rect x="20" y="200" width="40" height="55" fill="url(#glass)" stroke="#0A0A0A" stroke-width="0.5"/>
+    <rect x="80" y="200" width="40" height="55" fill="url(#glass)" stroke="#0A0A0A" stroke-width="0.5"/>
+    <rect x="135" y="200" width="40" height="55" fill="url(#glass)" stroke="#0A0A0A" stroke-width="0.5"/>
+    <rect x="190" y="200" width="40" height="55" fill="url(#glass)" stroke="#0A0A0A" stroke-width="0.5"/>
+    
+    <!-- 2nd floor -->
+    <rect x="0" y="290" width="250" height="110" fill="url(#brick)" stroke="#0A0A0A" stroke-width="1.5"/>
+    <rect x="20" y="310" width="40" height="55" fill="url(#glass)" stroke="#0A0A0A" stroke-width="0.5"/>
+    <rect x="80" y="310" width="40" height="55" fill="url(#glass)" stroke="#0A0A0A" stroke-width="0.5"/>
+    <rect x="135" y="310" width="40" height="55" fill="url(#glass)" stroke="#0A0A0A" stroke-width="0.5"/>
+    <rect x="190" y="310" width="40" height="55" fill="url(#glass)" stroke="#0A0A0A" stroke-width="0.5"/>
+    
+    <!-- Ground floor (existing storefront) -->
+    <rect x="0" y="400" width="250" height="100" fill="url(#existing)" stroke="#0A0A0A" stroke-width="1.5"/>
+    <rect x="40" y="420" width="170" height="75" fill="url(#glass)" stroke="#0A0A0A" stroke-width="0.8"/>
+    <rect x="100" y="445" width="50" height="50" fill="#1A3D5C" stroke="#0A0A0A" stroke-width="1"/>
+    <text x="125" y="475" text-anchor="middle" font-size="8" fill="#FAF6F0">DOOR</text>
+    
+    <!-- Storefront sign -->
+    <rect x="20" y="408" width="210" height="14" fill="#FAF6F0" stroke="#0A0A0A" stroke-width="0.5"/>
+    <text x="125" y="418" text-anchor="middle" font-size="8" font-style="italic" fill="#0A0A0A">Augustine's Salumeria</text>
+    
+    <!-- LULA lift indicator -->
+    <rect x="0" y="400" width="20" height="100" fill="#FAF6F0" stroke="#9E8729" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="10" y="460" text-anchor="middle" font-size="7" fill="#9E8729" transform="rotate(-90 10 460)">LULA LIFT</text>
+    
+    <!-- Floor labels -->
+    <text x="265" y="240" font-size="10" font-weight="600" fill="#0A0A0A">FLOOR 3 (OFFICE)</text>
+    <text x="265" y="350" font-size="10" font-weight="600" fill="#0A0A0A">FLOOR 2 (OFFICE)</text>
+    <text x="265" y="455" font-size="10" font-weight="600" fill="#BFA133">FLOOR 1 (EXISTING)</text>
+    
+    <!-- Height dimensions -->
+    <g stroke="#0A0A0A" stroke-width="0.5">
+      <line x1="-30" y1="180" x2="-30" y2="290"/>
+      <line x1="-35" y1="180" x2="-25" y2="180"/>
+      <line x1="-35" y1="290" x2="-25" y2="290"/>
+      <line x1="-30" y1="290" x2="-30" y2="400"/>
+      <line x1="-35" y1="400" x2="-25" y2="400"/>
+      <line x1="-30" y1="400" x2="-30" y2="500"/>
+      <line x1="-35" y1="500" x2="-25" y2="500"/>
+    </g>
+    <text x="-42" y="240" text-anchor="middle" font-size="9" font-weight="600" fill="#0A0A0A" transform="rotate(-90 -42 240)">11'-0"</text>
+    <text x="-42" y="350" text-anchor="middle" font-size="9" font-weight="600" fill="#0A0A0A" transform="rotate(-90 -42 350)">11'-0"</text>
+    <text x="-42" y="455" text-anchor="middle" font-size="9" font-weight="600" fill="#0A0A0A" transform="rotate(-90 -42 455)">14'-0"</text>
+    
+    <!-- Total height -->
+    <g stroke="#BFA133" stroke-width="1">
+      <line x1="-75" y1="180" x2="-75" y2="500"/>
+      <line x1="-80" y1="180" x2="-70" y2="180"/>
+      <line x1="-80" y1="500" x2="-70" y2="500"/>
+    </g>
+    <text x="-90" y="345" text-anchor="middle" font-size="11" font-weight="700" fill="#BFA133" transform="rotate(-90 -90 345)">36'-0" TOTAL</text>
+    
+    <!-- Width dimension -->
+    <g stroke="#0A0A0A" stroke-width="0.5">
+      <line x1="0" y1="525" x2="250" y2="525"/>
+      <line x1="0" y1="520" x2="0" y2="530"/>
+      <line x1="250" y1="520" x2="250" y2="530"/>
+    </g>
+    <text x="125" y="545" text-anchor="middle" font-size="11" font-weight="700" fill="#0A0A0A">25'-0" LOT WIDTH</text>
+    
+    <!-- Zoning limit reference -->
+    <line x1="-10" y1="160" x2="260" y2="160" stroke="#B33A3A" stroke-width="1" stroke-dasharray="6,3"/>
+    <text x="125" y="155" text-anchor="middle" font-size="9" fill="#B33A3A" font-weight="600">C-2 ZONING HEIGHT LIMIT (≈40')</text>
+  </g>
+  
+  <!-- ============ SIDE ELEVATION ============ -->
+  <g transform="translate(450,100)">
+    <text x="250" y="0" text-anchor="middle" font-size="15" font-weight="700" fill="#0A0A0A">SIDE ELEVATION (NORTH/SOUTH)</text>
+    <text x="250" y="18" text-anchor="middle" font-size="10" fill="#6B5F4F">Lot Depth Section — Showing Existing + Rear Addition Massing</text>
+    
+    <!-- Ground line -->
+    <line x1="-10" y1="500" x2="510" y2="500" stroke="#0A0A0A" stroke-width="2"/>
+    <line x1="-10" y1="503" x2="510" y2="503" stroke="#0A0A0A" stroke-width="1"/>
+    
+    <!-- Front zone (3-story over existing 55' depth, scaled) -->
+    <!-- 55' depth = 275px scale 1:5 -->
+    <!-- 3rd Floor -->
+    <rect x="0" y="180" width="275" height="110" fill="url(#brick)" stroke="#0A0A0A" stroke-width="1.5"/>
+    <rect x="20" y="200" width="35" height="55" fill="url(#glass)"/>
+    <rect x="75" y="200" width="35" height="55" fill="url(#glass)"/>
+    <rect x="130" y="200" width="35" height="55" fill="url(#glass)"/>
+    <rect x="185" y="200" width="35" height="55" fill="url(#glass)"/>
+    <rect x="240" y="200" width="25" height="55" fill="url(#glass)"/>
+    
+    <!-- 2nd Floor -->
+    <rect x="0" y="290" width="275" height="110" fill="url(#brick)" stroke="#0A0A0A" stroke-width="1.5"/>
+    <rect x="20" y="310" width="35" height="55" fill="url(#glass)"/>
+    <rect x="75" y="310" width="35" height="55" fill="url(#glass)"/>
+    <rect x="130" y="310" width="35" height="55" fill="url(#glass)"/>
+    <rect x="185" y="310" width="35" height="55" fill="url(#glass)"/>
+    <rect x="240" y="310" width="25" height="55" fill="url(#glass)"/>
+    
+    <!-- Existing 1st Floor (55' depth) -->
+    <rect x="0" y="400" width="275" height="100" fill="url(#existing)" stroke="#0A0A0A" stroke-width="1.5"/>
+    
+    <!-- Rear Addition (120 px = 24' deep, 1 story = 14' = 70px) -->
+    <rect x="275" y="430" width="120" height="70" fill="#FAF6F0" stroke="#0A0A0A" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <text x="335" y="470" text-anchor="middle" font-size="10" font-weight="600" fill="#0A0A0A">REAR ADDITION</text>
+    <text x="335" y="484" text-anchor="middle" font-size="8" fill="#6B5F4F">(Phase 4 — 1 story)</text>
+    
+    <!-- Rear yard / setback -->
+    <rect x="395" y="490" width="115" height="10" fill="#FAF6F0" stroke="#BFA133" stroke-width="0.5" stroke-dasharray="2,2"/>
+    <text x="452" y="480" text-anchor="middle" font-size="8" fill="#9E8729" font-style="italic">10' rear setback</text>
+    
+    <!-- Front/rear labels -->
+    <text x="137" y="455" text-anchor="middle" font-size="10" font-weight="600" fill="#0A0A0A">EXISTING — 55' DEEP</text>
+    
+    <!-- Dimensions -->
+    <g stroke="#0A0A0A" stroke-width="0.5">
+      <line x1="0" y1="525" x2="275" y2="525"/>
+      <line x1="0" y1="520" x2="0" y2="530"/>
+      <line x1="275" y1="520" x2="275" y2="530"/>
+      <line x1="275" y1="525" x2="395" y2="525"/>
+      <line x1="275" y1="520" x2="275" y2="530"/>
+      <line x1="395" y1="520" x2="395" y2="530"/>
+      <line x1="395" y1="525" x2="510" y2="525"/>
+      <line x1="510" y1="520" x2="510" y2="530"/>
+    </g>
+    <text x="137" y="545" text-anchor="middle" font-size="11" font-weight="700" fill="#0A0A0A">55'-0" EXIST</text>
+    <text x="335" y="545" text-anchor="middle" font-size="11" font-weight="700" fill="#BFA133">24'-0" NEW</text>
+    <text x="452" y="545" text-anchor="middle" font-size="11" font-weight="700" fill="#0A0A0A">25'-0" YARD</text>
+    
+    <line x1="0" y1="565" x2="510" y2="565" stroke="#0A0A0A" stroke-width="1.5"/>
+    <text x="255" y="585" text-anchor="middle" font-size="12" font-weight="700" fill="#0A0A0A">104'-0" LOT DEPTH</text>
+    
+    <!-- Halstead Ave label -->
+    <text x="-25" y="450" text-anchor="middle" font-size="10" font-weight="600" fill="#6B5F4F" transform="rotate(-90 -25 450)">HALSTEAD AVE →</text>
+    
+    <!-- Zoning limit reference -->
+    <line x1="-10" y1="160" x2="510" y2="160" stroke="#B33A3A" stroke-width="1" stroke-dasharray="6,3"/>
+    <text x="250" y="155" text-anchor="middle" font-size="9" fill="#B33A3A" font-weight="600">C-2 ZONING HEIGHT LIMIT (≈40')</text>
+  </g>
+  
+  <!-- ============ REAR ELEVATION ============ -->
+  <g transform="translate(80,650)">
+    <text x="125" y="0" text-anchor="middle" font-size="15" font-weight="700" fill="#0A0A0A">REAR ELEVATION</text>
+    <text x="125" y="18" text-anchor="middle" font-size="10" fill="#6B5F4F">Service Yard View — Looking at rear addition</text>
+    
+    <line x1="-10" y1="220" x2="260" y2="220" stroke="#0A0A0A" stroke-width="2"/>
+    
+    <!-- 3rd floor (rear face) -->
+    <rect x="0" y="60" width="250" height="42" fill="url(#brick)" stroke="#0A0A0A" stroke-width="1.2"/>
+    <rect x="100" y="70" width="50" height="22" fill="url(#glass)" stroke="#0A0A0A" stroke-width="0.5"/>
+    
+    <!-- 2nd floor (rear face) -->
+    <rect x="0" y="102" width="250" height="42" fill="url(#brick)" stroke="#0A0A0A" stroke-width="1.2"/>
+    <rect x="100" y="112" width="50" height="22" fill="url(#glass)" stroke="#0A0A0A" stroke-width="0.5"/>
+    
+    <!-- 1st floor existing rear wall (visible behind addition) -->
+    <rect x="0" y="144" width="250" height="36" fill="url(#existing)" opacity="0.5" stroke="#6B5F4F" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <text x="125" y="165" text-anchor="middle" font-size="8" fill="#6B5F4F" font-style="italic">Existing Bldg rear wall (behind)</text>
+    
+    <!-- Rear addition (new structure in foreground) -->
+    <rect x="0" y="170" width="250" height="50" fill="#FAF6F0" stroke="#0A0A0A" stroke-width="1.5"/>
+    <rect x="100" y="183" width="50" height="32" fill="#1A3D5C" stroke="#0A0A0A" stroke-width="1"/>
+    <text x="125" y="200" text-anchor="middle" font-size="7" fill="#FAF6F0">SERVICE</text>
+    <text x="125" y="210" text-anchor="middle" font-size="7" fill="#FAF6F0">DOOR</text>
+    <text x="40" y="200" font-size="8" fill="#6B5F4F">EXHAUST</text>
+    <text x="200" y="200" font-size="8" fill="#6B5F4F">GREASE</text>
+    
+    <text x="125" y="237" text-anchor="middle" font-size="10" font-weight="600" fill="#BFA133">REAR ADDITION (PHASE 4)</text>
+    
+    <!-- Width dim -->
+    <g stroke="#0A0A0A" stroke-width="0.5">
+      <line x1="0" y1="260" x2="250" y2="260"/>
+      <line x1="0" y1="255" x2="0" y2="265"/>
+      <line x1="250" y1="255" x2="250" y2="265"/>
+    </g>
+    <text x="125" y="278" text-anchor="middle" font-size="11" font-weight="700" fill="#0A0A0A">25'-0" WIDTH</text>
+  </g>
+  
+  <!-- ============ AREA SCHEDULE ============ -->
+  <g transform="translate(450,650)">
+    <rect width="670" height="220" fill="#FAF6F0" stroke="#0A0A0A" stroke-width="1"/>
+    <text x="335" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#0A0A0A">USABLE SQUARE FOOTAGE SCHEDULE — POST DEVELOPMENT</text>
+    <line x1="0" y1="32" x2="670" y2="32" stroke="#0A0A0A" stroke-width="1"/>
+    
+    <text x="15" y="50" font-size="10" font-weight="700" fill="#0A0A0A">FLOOR</text>
+    <text x="120" y="50" font-size="10" font-weight="700" fill="#0A0A0A">USE</text>
+    <text x="290" y="50" font-size="10" font-weight="700" fill="#0A0A0A">GROSS SF</text>
+    <text x="375" y="50" font-size="10" font-weight="700" fill="#0A0A0A">USABLE SF</text>
+    <text x="475" y="50" font-size="10" font-weight="700" fill="#0A0A0A">CEILING HT</text>
+    <text x="560" y="50" font-size="10" font-weight="700" fill="#0A0A0A">RENT $/SF</text>
+    <line x1="0" y1="55" x2="670" y2="55" stroke="#0A0A0A" stroke-width="0.5"/>
+    
+    <text x="15" y="72" font-size="10" fill="#0A0A0A">Floor 1 (Existing)</text>
+    <text x="120" y="72" font-size="10" fill="#0A0A0A">Restaurant — Augustine's</text>
+    <text x="290" y="72" font-size="10" fill="#0A0A0A">1,375</text>
+    <text x="375" y="72" font-size="10" fill="#0A0A0A">1,290</text>
+    <text x="475" y="72" font-size="10" fill="#0A0A0A">14'</text>
+    <text x="560" y="72" font-size="10" fill="#0A0A0A">$34 (NNN)</text>
+    
+    <text x="15" y="90" font-size="10" fill="#BFA133">Floor 1 (Rear Addition)</text>
+    <text x="120" y="90" font-size="10" fill="#BFA133">Restaurant Expansion</text>
+    <text x="290" y="90" font-size="10" fill="#BFA133">+ 600</text>
+    <text x="375" y="90" font-size="10" fill="#BFA133">+ 560</text>
+    <text x="475" y="90" font-size="10" fill="#BFA133">14'</text>
+    <text x="560" y="90" font-size="10" fill="#BFA133">$45 (NNN)</text>
+    
+    <text x="15" y="108" font-size="10" fill="#0A0A0A">Floor 2 (New)</text>
+    <text x="120" y="108" font-size="10" fill="#0A0A0A">Office — Open Plan</text>
+    <text x="290" y="108" font-size="10" fill="#0A0A0A">1,975</text>
+    <text x="375" y="108" font-size="10" fill="#0A0A0A">1,800</text>
+    <text x="475" y="108" font-size="10" fill="#0A0A0A">11'</text>
+    <text x="560" y="108" font-size="10" fill="#0A0A0A">$38 (Gross)</text>
+    
+    <text x="15" y="126" font-size="10" fill="#0A0A0A">Floor 3 (New)</text>
+    <text x="120" y="126" font-size="10" fill="#0A0A0A">Office — Premium / Corner</text>
+    <text x="290" y="126" font-size="10" fill="#0A0A0A">1,975</text>
+    <text x="375" y="126" font-size="10" fill="#0A0A0A">1,800</text>
+    <text x="475" y="126" font-size="10" fill="#0A0A0A">11'</text>
+    <text x="560" y="126" font-size="10" fill="#0A0A0A">$42 (Gross)</text>
+    
+    <line x1="0" y1="135" x2="670" y2="135" stroke="#0A0A0A" stroke-width="0.5"/>
+    
+    <text x="15" y="153" font-size="11" font-weight="700" fill="#0A0A0A">TOTAL DEVELOPED</text>
+    <text x="120" y="153" font-size="10" fill="#0A0A0A">Restaurant + Office Mixed-Use</text>
+    <text x="290" y="153" font-size="11" font-weight="700" fill="#0A0A0A">5,925 SF</text>
+    <text x="375" y="153" font-size="11" font-weight="700" fill="#0A0A0A">5,450 SF</text>
+    <text x="475" y="153" font-size="10" fill="#0A0A0A">36' bldg ht</text>
+    <text x="560" y="153" font-size="10" fill="#6B5F4F" font-style="italic">Blended</text>
+    
+    <line x1="0" y1="160" x2="670" y2="160" stroke="#BFA133" stroke-width="1.5"/>
+    
+    <text x="15" y="178" font-size="10" font-weight="700" fill="#0A0A0A">PROJ. GROSS ANNUAL RENT (STABILIZED)</text>
+    <text x="290" y="178" font-size="11" font-weight="700" fill="#0A0A0A">~ $235K - $285K</text>
+    <text x="475" y="178" font-size="9" fill="#6B5F4F" font-style="italic">vs. $92.6K today</text>
+    
+    <text x="15" y="196" font-size="9" fill="#6B5F4F">Setbacks: 0' front / 0' side / 10' rear (per C-2)</text>
+    <text x="290" y="196" font-size="9" fill="#6B5F4F">Bldg Ht limit: ~40' (3 stories OK)</text>
+    
+    <text x="15" y="210" font-size="9" fill="#9E8729" font-style="italic">⚠ All figures conceptual — subject to entitlement approvals, architectural finalization, and market conditions.</text>
+  </g>
+</svg>

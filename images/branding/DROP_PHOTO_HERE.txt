@@ -1,0 +1,7 @@
+DROP HERE — David A. Goldoff bio photo
+
+Save the professional headshot you sent (blue suit, gray background) as:
+   david-goldoff-bio.jpg
+
+The site will automatically use it in the Sponsor section as David's bio photo.
+Recommended: portrait orientation, at least 800px wide.

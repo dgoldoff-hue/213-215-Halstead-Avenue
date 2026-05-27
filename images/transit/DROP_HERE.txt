@@ -1,0 +1,10 @@
+DROP HERE — Mamaroneck Train Station Photos
+
+Save the two images you sent into THIS folder with these EXACT filenames:
+
+  1. mamaroneck-platform-sign.jpg     ← The platform sign showing "Mamaroneck" station name
+  2. mamaroneck-station-historic.jpg  ← The historic 1888 Romanesque station building exterior at dusk
+
+The site will automatically display them in the Location → Mamaroneck Metro-North Station section.
+
+If files are missing, fallback gracefully — no broken images.

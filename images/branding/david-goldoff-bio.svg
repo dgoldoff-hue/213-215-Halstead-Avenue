@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="50%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D4B45A"/>
+      <stop offset="50%" stop-color="#BFA133"/>
+      <stop offset="100%" stop-color="#9E8729"/>
+    </linearGradient>
+    <filter id="soft-glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  
+  <!-- Backdrop -->
+  <rect width="600" height="800" fill="url(#bg-grad)"/>
+  
+  <!-- Subtle texture lines -->
+  <g opacity="0.05">
+    <line x1="0" y1="200" x2="600" y2="200" stroke="#BFA133" stroke-width="0.5"/>
+    <line x1="0" y1="600" x2="600" y2="600" stroke="#BFA133" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Gold corner accent (top-left) -->
+  <g>
+    <rect x="30" y="30" width="80" height="3" fill="#BFA133"/>
+    <rect x="30" y="30" width="3" height="80" fill="#BFA133"/>
+  </g>
+  
+  <!-- Gold corner accent (bottom-right) -->
+  <g>
+    <rect x="490" y="767" width="80" height="3" fill="#BFA133"/>
+    <rect x="567" y="690" width="3" height="80" fill="#BFA133"/>
+  </g>
+  
+  <!-- Massive elegant monogram, centered -->
+  <g transform="translate(300,300)">
+    <!-- Outer ring -->
+    <circle r="130" fill="none" stroke="#BFA133" stroke-width="2" opacity="0.55"/>
+    <circle r="120" fill="none" stroke="#BFA133" stroke-width="0.5" opacity="0.35"/>
+    
+    <!-- Monogram letters -->
+    <text y="35" text-anchor="middle" font-size="160" font-weight="300"
+          font-family="'Georgia', 'Times New Roman', serif"
+          fill="url(#gold-grad)" letter-spacing="-6">DG</text>
+  </g>
+  
+  <!-- Tiny gold dot separator -->
+  <circle cx="300" cy="490" r="3" fill="#BFA133"/>
+  
+  <!-- Name in serif -->
+  <text x="300" y="540" text-anchor="middle"
+        font-family="'Georgia', 'Times New Roman', serif"
+        font-size="38" font-weight="400" fill="#FAF6F0" letter-spacing="1">DAVID A. GOLDOFF</text>
+  
+  <!-- Title -->
+  <text x="300" y="575" text-anchor="middle"
+        font-size="11" font-weight="600" fill="#BFA133" letter-spacing="6">MANAGING MEMBER &#x2022; PERSONAL GUARANTOR</text>
+  
+  <!-- Quote / positioning -->
+  <text x="300" y="630" text-anchor="middle"
+        font-family="'Georgia', serif"
+        font-size="14" font-style="italic" fill="#D8D0C2" letter-spacing="0.5">"Real estate is my family's business — three</text>
+  <text x="300" y="650" text-anchor="middle"
+        font-family="'Georgia', serif"
+        font-size="14" font-style="italic" fill="#D8D0C2" letter-spacing="0.5">generations, since the late 1980s."</text>
+  
+  <!-- Affiliations strip -->
+  <g transform="translate(300,710)">
+    <text y="0" text-anchor="middle" font-size="9" font-weight="700"
+          fill="#BFA133" letter-spacing="4">CAMELOT REALTY GROUP  &#x2022;  PENN SOUTH CAPITAL</text>
+    <text y="20" text-anchor="middle" font-size="8" fill="#9E8729" letter-spacing="3">FOUNDED 2006  &#x2022;  GP SINCE 2014</text>
+  </g>
+</svg>
