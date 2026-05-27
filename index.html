@@ -8,7 +8,7 @@
 <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="expires" content="0">
-<link rel="stylesheet" href="style.css?v=22">
+<link rel="stylesheet" href="style.css?v=23">
 <style>
 /* CRITICAL CSS — guarantees gate works even if external stylesheet fails */
 html, body { margin: 0; padding: 0; background: #0A0A0A; color: #FAF6F0; font-family: Georgia, 'Times New Roman', serif; }
@@ -32,7 +32,9 @@ html, body { margin: 0; padding: 0; background: #0A0A0A; color: #FAF6F0; font-fa
 .gate-hero-meta { margin-top: 1rem; color: #BFA133; font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; font-family: 'Helvetica Neue', sans-serif; }
 .gate-hero-meta-line2 { color: #d8d2c4; }
 .gate-hero-meta .dot { color: #BFA133; margin: 0 0.5rem; }
-.gate input[type="password"], .gate input[type="text"] { width: 100%; padding: 0.75rem 1rem; background: #1a1a1a; color: #FAF6F0; border: 1px solid #BFA133; border-radius: 2px; font-size: 1rem; box-sizing: border-box; }
+.gate-panel form, .gate-form form { width: 100%; display: block; }
+.gate-panel form input, .gate-form form input, .gate input[type="password"], .gate input[type="text"] { display: block !important; width: 100% !important; min-width: 280px; padding: 0.85rem 1rem; background: #1a1a1a; color: #FAF6F0; border: 1px solid #BFA133; border-radius: 2px; font-size: 1rem; box-sizing: border-box; margin-bottom: 0.75rem; }
+.gate-panel form button, .gate-form form button { display: block !important; width: 100% !important; }
 .gate button { margin-top: 0.75rem; width: 100%; padding: 0.85rem 1rem; background: #BFA133; color: #0A0A0A; border: none; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; border-radius: 2px; }
 .gate button:hover { background: #d4b94b; }
 .gate-greeting, .gate h2 { color: #BFA133; letter-spacing: 0.15em; text-transform: uppercase; font-size: 0.9rem; font-family: 'Helvetica Neue', sans-serif; margin-bottom: 1rem; }
@@ -526,6 +528,6 @@ html, body { margin: 0; padding: 0; background: #0A0A0A; color: #FAF6F0; font-fa
   <img id="lightbox-img" src="" alt="">
 </div>
 
-<script src="auth.js?v=22"></script>
+<script src="auth.js?v=23"></script>
 </body>
 </html>
