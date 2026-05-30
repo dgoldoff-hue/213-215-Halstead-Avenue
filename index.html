@@ -8,10 +8,14 @@
 <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="expires" content="0">
-<link rel="stylesheet" href="style.css?v=24">
+<link rel="stylesheet" href="style.css?v=25">
 <style>
 /* CRITICAL CSS — guarantees gate works even if external stylesheet fails */
-html, body { margin: 0; padding: 0; background: #0A0A0A; color: #FAF6F0; font-family: Georgia, 'Times New Roman', serif; }
+html, body { margin: 0; padding: 0; font-family: Georgia, 'Times New Roman', serif; }
+body { background: #FAF6F0; color: #1a1a1a; }
+#content, #content * { color: #1a1a1a; }
+#content .section-dark, #content .section-dark *, #content .hero, #content .hero * { color: #FAF6F0; }
+#content .section-dark strong, #content .section-dark h2, #content .section-dark h3 { color: #FAF6F0; }
 .gate {
   position: fixed; inset: 0; z-index: 9999;
   background: linear-gradient(135deg, #0A0A0A 0%, #1F1F1F 100%);
@@ -279,7 +283,7 @@ html, body { margin: 0; padding: 0; background: #0A0A0A; color: #FAF6F0; font-fa
         </ul>
       </div>
       <div class="image-stack">
-        <img src="images/property_clean/IMG_7641.jpeg" alt="213-215 Halstead Avenue" onclick="openLightbox(this)" onerror="this.src='images/property_clean/IMG_7634.jpeg'">
+        <img src="images/storefront/augustines_side.jpg" alt="213-215 Halstead Avenue — Augustine's storefront" onclick="openLightbox(this)" onerror="this.onerror=null; this.src='images/storefront/augustines_at_night.jpg';">
       </div>
     </div>
   </div>
@@ -530,6 +534,6 @@ html, body { margin: 0; padding: 0; background: #0A0A0A; color: #FAF6F0; font-fa
   <img id="lightbox-img" src="" alt="">
 </div>
 
-<script src="auth.js?v=24"></script>
+<script src="auth.js?v=25"></script>
 </body>
 </html>
