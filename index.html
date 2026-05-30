@@ -8,7 +8,7 @@
 <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="expires" content="0">
-<link rel="stylesheet" href="style.css?v=26">
+<link rel="stylesheet" href="style.css?v=27">
 <style>
 /* CRITICAL CSS — guarantees gate works even if external stylesheet fails */
 html, body { margin: 0; padding: 0; font-family: Georgia, 'Times New Roman', serif; }
@@ -141,7 +141,7 @@ body { background: #FAF6F0; color: #1a1a1a; }
     <p class="hero-tagline">Single-Tenant NNN Retail with Documented Mixed-Use Development Upside</p>
     <div class="hero-stats">
       <div class="stat"><div class="stat-value">$1,000,000</div><div class="stat-label">Purchase Price</div></div>
-      <div class="stat"><div class="stat-value">9.26%</div><div class="stat-label">Stabilized Cap</div></div>
+      <div class="stat"><div class="stat-value">6.77%</div><div class="stat-label">Stabilized Cap (NOI / Price)</div></div>
       <div class="stat"><div class="stat-value">1.30&times;</div><div class="stat-label">Stabilized DSCR</div></div>
       <div class="stat"><div class="stat-value">2,600 SF</div><div class="stat-label">Building (25&prime; &times; 104&prime; Lot)</div></div>
     </div>
@@ -441,12 +441,14 @@ body { background: #FAF6F0; color: #1a1a1a; }
         <table class="fin-table">
           <tr><th>SOURCES</th><th></th></tr>
           <tr><td>Ponce Bank Loan (6.5% / 30-yr fully am)</td><td>$690,000</td></tr>
-          <tr><td>Borrower Equity</td><td>$310,000</td></tr>
-          <tr class="total"><td>TOTAL SOURCES</td><td>$1,000,000</td></tr>
+          <tr><td>Borrower Equity &mdash; Purchase</td><td>$310,000</td></tr>
+          <tr><td>Borrower Equity &mdash; Closing Costs</td><td>$27,900</td></tr>
+          <tr class="total"><td>TOTAL SOURCES</td><td>$1,027,900</td></tr>
           <tr><th>USES</th><th></th></tr>
           <tr><td>Purchase Price</td><td>$1,000,000</td></tr>
           <tr><td>Closing Costs (No Phase I)</td><td>$27,900</td></tr>
-          <tr class="total"><td>TOTAL CASH INVESTED</td><td>$337,900</td></tr>
+          <tr class="total"><td>TOTAL USES</td><td>$1,027,900</td></tr>
+          <tr><th>TOTAL CASH INVESTED</th><th>$337,900</th></tr>
         </table>
       </div>
       <div class="fin-card">
@@ -454,22 +456,28 @@ body { background: #FAF6F0; color: #1a1a1a; }
         <table class="fin-table">
           <tr><td>Gross Effective Rent (Year 1 weighted)</td><td>$90,160</td></tr>
           <tr><td>Operating Expenses</td><td>$24,912</td></tr>
-          <tr class="subtotal"><td>Net Operating Income (NOI)</td><td>$65,248</td></tr>
-          <tr><td>Annual Debt Service</td><td>$52,259</td></tr>
-          <tr class="subtotal"><td>Cash Flow After Debt</td><td>$12,989</td></tr>
+          <tr class="subtotal"><td>Net Operating Income (Year 1)</td><td>$65,248</td></tr>
+          <tr><td>Net Operating Income (Stabilized post Oct 2026)</td><td>$67,728</td></tr>
+          <tr><td>Annual Debt Service ($690K @ 6.5% / 30 yrs)</td><td>$52,335</td></tr>
+          <tr class="subtotal"><td>Cash Flow After Debt (Year 1)</td><td>$12,913</td></tr>
+          <tr class="subtotal"><td>Cash Flow After Debt (Stabilized)</td><td>$15,393</td></tr>
+          <tr><td>Year 1 Cash-on-Cash (basis $337,900)</td><td>3.82%</td></tr>
+          <tr><td>Stabilized Cash-on-Cash</td><td>4.56%</td></tr>
+          <tr class="total"><td>DSCR &mdash; Year 1</td><td>1.25&times;</td></tr>
           <tr class="total"><td>DSCR &mdash; Stabilized</td><td>1.30&times;</td></tr>
         </table>
       </div>
     </div>
     <h3 class="fin-section-title">5-Year Hold Scenarios</h3>
     <table class="fin-table fin-table-wide">
-      <thead><tr><th>Exit Scenario</th><th>Exit Value</th><th>Total Return</th><th>Equity Multiple</th><th>Approx IRR</th></tr></thead>
+      <thead><tr><th>Exit Scenario</th><th>Exit Value</th><th>Net Sale Proceeds</th><th>Total Profit (5-yr)</th><th>Equity Multiple</th><th>IRR</th></tr></thead>
       <tbody>
-        <tr><td>No appreciation</td><td>$1,000,000</td><td>$60,961</td><td>1.18&times;</td><td>3.4%</td></tr>
-        <tr class="highlight"><td>Modest (3%/yr)</td><td>$1,159,274</td><td>$212,272</td><td><strong>1.63&times;</strong></td><td><strong>10.2%</strong></td></tr>
-        <tr><td>Strong (6%/yr)</td><td>$1,338,226</td><td>$382,276</td><td>2.13&times;</td><td>16.4%</td></tr>
+        <tr><td>No appreciation</td><td>$1,000,000</td><td>$304,084</td><td>$63,428</td><td>1.19&times;</td><td>3.8%</td></tr>
+        <tr class="highlight"><td>Base &mdash; Modest (3%/yr)</td><td>$1,159,274</td><td>$455,395</td><td><strong>$214,738</strong></td><td><strong>1.64&times;</strong></td><td><strong>11.1%</strong></td></tr>
+        <tr><td>Strong (6%/yr)</td><td>$1,338,226</td><td>$625,399</td><td>$384,742</td><td>2.14&times;</td><td>17.5%</td></tr>
       </tbody>
     </table>
+    <p class="footnote" style="font-size:0.8rem; color:#6B5F4F; margin-top:0.5rem;">Assumes 3.5% annual rent escalation per lease schedule, OpEx flat at $24,912, 5% transaction cost on exit, Ponce loan balance $645,916 at month 60. Initial cash $337,900 (equity $310K + closing $27.9K). Cash-on-cash growing from 3.82% (Y1) → ~7.8% (Y5).</p>
     <p class="cta-row">
       <a class="btn btn-primary" href="model/Halstead_Investment_Model.xlsx">Download Detailed Investment Model (XLSX)</a>
       <a class="btn btn-outline" href="docs/07_Investment_Memo.pdf">Download Investment Memo (PDF)</a>
@@ -573,6 +581,6 @@ body { background: #FAF6F0; color: #1a1a1a; }
   <img id="lightbox-img" src="" alt="">
 </div>
 
-<script src="auth.js?v=26"></script>
+<script src="auth.js?v=27"></script>
 </body>
 </html>
